@@ -9,3 +9,4 @@ services:
     environment:
       USERNAME: ${USERNAME}
       PASSWORD: ${PASSWORD}
+    restart: unless-stopped
