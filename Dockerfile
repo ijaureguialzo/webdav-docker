@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.24-bullseye
 
 LABEL maintainer="maltokyo"
 
