@@ -1,4 +1,6 @@
-FROM nginx:1.24-bullseye
+ARG NGINX_VERSION
+
+FROM nginx:${NGINX_VERSION}
 
 LABEL maintainer="maltokyo"
 

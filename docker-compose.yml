@@ -1,7 +1,10 @@
 services:
 
   nginx_webdav:
-    build: .
+    build:
+      context: .
+      args:
+        - NGINX_VERSION=${NGINX_VERSION}
     ports:
       - "${PORT}:80"
     volumes:

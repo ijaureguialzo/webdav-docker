@@ -1,3 +1,4 @@
+NGINX_VERSION=stable-bullseye
 MEDIA_PATH=./share
 PORT=8090
 USERNAME=admin
