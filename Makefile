@@ -42,7 +42,7 @@ build:
 	@docker compose build
 
 update:
-	@docker compose build --pull --no-cache
+	@docker compose build --pull
 
 logs:
 	@docker compose logs
