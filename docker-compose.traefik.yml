@@ -1,0 +1,12 @@
+services:
+  webdav:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.webdav.rule=Host(`${FQDN_WEBDAV:-webdav.test}`)"
+      - "traefik.http.routers.webdav.entrypoints=websecure"
+      - "traefik.http.routers.webdav.tls=true"
+
+networks:
+  default:
+    name: ${NETWORK_NAME:-traefik-network}
+    external: true

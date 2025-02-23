@@ -1,6 +1,6 @@
 services:
 
-  nginx_webdav:
+  webdav:
     build:
       context: .
       args:
