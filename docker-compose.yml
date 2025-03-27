@@ -5,6 +5,7 @@ services:
       context: .
       args:
         - NGINX_VERSION=${NGINX_VERSION}
+    init: true
     ports:
       - "${PORT}:80"
     volumes:
