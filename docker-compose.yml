@@ -13,4 +13,5 @@ services:
     environment:
       USERNAME: ${USERNAME}
       PASSWORD: ${PASSWORD}
+      TZ: ${TIMEZONE}
     restart: unless-stopped
